@@ -14,14 +14,14 @@ To launch the utility download .py scripts and run the program in terminal using
 
 Program accepts the following arguments:
 
-`input_fastq` --- path to the input file; 
+`input_fastq` &mdash path to the input file; 
 
-`output_file_prefix` --- prefix for the output file: *_passed.fastq* for the file with reads passed the filter, *_failed.fastq* for the file with reads that did not passed the filter;
+`output_file_prefix` &mdash prefix for the output file: *_passed.fastq* for the file with reads passed the filter, *_failed.fastq* for the file with reads that did not passed the filter;
 
-`gc_bounds` --- percentage interval of guanine-cytosine content. One entered number takes it as an upper limit, default interval is (0, 100);
+`gc_bounds` &mdash percentage interval of guanine-cytosine content. One entered number takes it as an upper limit, default interval is (0, 100);
 
-`length_bound` --- length interval for filtration, default interval is (0, 2<sup>32</sup>);
+`length_bound` &mdash length interval for filtration, default interval is (0, 2<sup>32</sup>);
 
-`quality_threshold` --- limit for the mean value of read quality; 
+`quality_threshold` &mdash limit for the mean value of read quality; 
 
-`save_filtered` --- whether filtered reads would be saved or not; default is **False**. 
+`save_filtered` &mdash whether filtered reads would be saved or not; default is **False**. 
