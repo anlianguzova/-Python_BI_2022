@@ -5,8 +5,9 @@ import matplotlib.pyplot as plt
 from collections import Counter
 
 """### References"""
+path_to_the_file = 'data/references.txt' # could be changed
 
-with open(r'data/references.txt') as references:
+with open(f'{path_to_the_file}') as references:
     references = references.read()
     ftp_sep = re.sub(r';', ' ', references)
     ftps = re.findall(r'ftp[\w./]+', ftp_sep)
@@ -15,8 +16,9 @@ with open(r'data/ftps.txt', 'w') as ftps_file:
     ftps_file.write('\n'.join(str(ftp) for ftp in ftps))
 
 """### 2430 AD"""
+path_to_the_file = 'data/2430AD.txt' # could be changed
 
-with open('data/2430AD.txt') as story:
+with open(f'{path_to_the_file}') as story:
     story = story.read()
     # Getting numbers
     story_num = re.findall(r'\d+[0-9.]+', story)
